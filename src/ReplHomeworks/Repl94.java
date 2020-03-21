@@ -10,7 +10,7 @@ public class Repl94 {
 		
 //				If browser is ChRoME it should print the: 
 //				"Proceed with Chrome browser"
-		
+	
 //				If browser is FireFOX it should print the: 
 //				"Proceed with Firefox browser"
 		
@@ -27,12 +27,26 @@ public class Repl94 {
 			
 			String browser = sc.nextLine();
 			
+		
+			if (browser.equalsIgnoreCase("CHROME")){
+				System.out.println("Proceed with Chrome browser");
+			}
+			else if (browser.equalsIgnoreCase("FIREFOX")) {
+				System.out.println("Proceed with Firefox browser");
+			}
+			else if (browser.equalsIgnoreCase("IE")) {
+				System.out.println("Proceed with IE browser");	
+			}else {
+				System.out.println("Invalid browser");
+			}
+				
 			
+			}
 			
 	}
 
-
-	}
 
 	
-}
+
+	
+
