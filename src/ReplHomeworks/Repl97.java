@@ -25,23 +25,23 @@ public class Repl97 {
 		    System.out.print("In:");
 		    String givenString = inp.nextLine();
 		    
-		    String reverse = "";
-		    
-		    
-		    String []array = givenString.split(" ");
-		    
-		    
-		    
-		   for (int i = array.length-1; i>=0 ; i--) {
+		
+		givenString = givenString.replace(" ", "");   
+		
+		int	length = givenString.length();
+			
+		String reverse = "";
+		     
+		   for (int i = length-1; i>=0 ; i--) {
 			   reverse = reverse +givenString.charAt(i);
 		   }
 			  
 			if (reverse.equalsIgnoreCase(givenString)) {
 				   
-				   System.out.println("true");
+				   System.out.println("The string is a palindrome");
 				
 			   }else {
-				   System.out.println("false");
+				   System.out.println("The string isn't a palindrome");
 			   }
 		   }
 }
